@@ -23,11 +23,11 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        docker build -t asia-south1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/django-repo/django-app .
+        docker build -t asia-south1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/github-vc/django-app .
 
     - name: Push Docker Image
       run: |
-        docker push asia-south1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/django-repo/django-app
+        docker push asia-south1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/github-vc/django-app
 
     - name: Deploy to VM
       uses: appleboy/ssh-action@master
