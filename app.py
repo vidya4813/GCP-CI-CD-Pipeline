@@ -60,7 +60,7 @@ def home(request):
             <div class="overlay">
                 <h1>🚀 Welcome to CI-CD Pipeline Setup using GitHub Actions</h1>
                 <p>This is a Django web app deployed using CI/CD pipeline</p>
-                <p class="footer">Pipeline Ready ✔</p>
+                <p class="footer">Pipeline Ready. ✔</p>
             </div>
         </body>
     </html>
@@ -75,3 +75,4 @@ urlpatterns = [
 
 if __name__ == '__main__':
     execute_from_command_line([sys.argv[0], 'runserver', '0.0.0.0:8000'])
+
