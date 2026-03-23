@@ -22,46 +22,44 @@ def home(request):
                 body {
                     margin: 0;
                     padding: 0;
-                    height: 100vh;
-                    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReFonU1eFqPkrPY7fVFGJg_BFVNFg05sHiRg&s');
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                     font-family: Arial, sans-serif;
-                }
-
-                .overlay {
-                    background-color: rgba(0, 0, 0, 0.6);
-                    padding: 40px;
-                    border-radius: 15px;
                     text-align: center;
+                    background-color: #f0f8ff;
                 }
 
                 h1 {
-                    color: #00ffcc;
-                    font-size: 40px;
+                    margin-top: 30px;
+                    color: green;
+                    font-size: 36px;
                 }
 
-                p {
-                    color: #ffffff;
-                    font-size: 20px;
+                .image-container {
+                    margin-top: 20px;
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    max-height: 80vh;
+                    object-fit: cover;
                 }
 
                 .footer {
                     margin-top: 20px;
-                    color: #ccc;
+                    color: gray;
+                    font-size: 18px;
                 }
             </style>
         </head>
         <body>
-            <div class="overlay">
-                <h1>🚀 Welcome to CI-CD Pipeline Setup using GitHub Actions.</h1>
-                <p>This is a Django web app deployed using CI/CD pipeline.</p>
-                <p class="footer">Pipeline Ready. ✔</p>
+            <h1>🚀 Welcome to CI-CD Pipeline Setup using GitHub Actions</h1>
+
+            <div class="image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReFonU1eFqPkrPY7fVFGJg_BFVNFg05sHiRg&s"
+                     alt="CI/CD Demo Image">
             </div>
+
+            <p class="footer">Pipeline Ready ✔</p>
         </body>
     </html>
     """
@@ -75,4 +73,3 @@ urlpatterns = [
 
 if __name__ == '__main__':
     execute_from_command_line([sys.argv[0], 'runserver', '0.0.0.0:8000'])
-
