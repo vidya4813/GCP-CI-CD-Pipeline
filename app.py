@@ -59,7 +59,7 @@ def home(request):
         <body>
             <div class="overlay">
                 <h1>🚀 Welcome to CI-CD Pipeline Setup using GitHub Actions</h1>
-                <p>This is a Django web app deployed using CI/CD pipeline</p>
+                <p>This is a Django web app deployed using CI/CD pipeline.</p>
                 <p class="footer">Pipeline Ready. ✔</p>
             </div>
         </body>
