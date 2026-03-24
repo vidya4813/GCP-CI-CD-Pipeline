@@ -68,7 +68,7 @@ def home(request):
 
 
 urlpatterns = [
-    path('', home,
+    path('', home),
 ]
 
 
