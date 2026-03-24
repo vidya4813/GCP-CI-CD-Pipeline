@@ -59,7 +59,7 @@ def home(request):
                      alt="CI/CD Demo Image">
             </div>
 
-            <p class="footer">Pipeline Ready </p>
+            <p class="footer">Pipeline Ready.</p>
         </body>
     </html>
     """
