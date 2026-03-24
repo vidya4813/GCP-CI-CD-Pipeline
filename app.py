@@ -6,7 +6,8 @@ from django.conf import settings
 
 
 settings.configure(
-    DEBUG=True,
+    #DEBUG=True,
+    DEBUG=False,
     ROOT_URLCONF=__name__,
     SECRET_KEY='demo-secret',
     ALLOWED_HOSTS=['*'],
@@ -73,5 +74,4 @@ urlpatterns = [
 
 
 if __name__ == '__main__':
-    execute_from_command_line(sys.argv)
     #execute_from_command_line([sys.argv[0], 'runserver', '0.0.0.0:8000'])
