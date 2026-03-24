@@ -14,6 +14,7 @@ settings.configure(
 
 
 def home(request):
+    x = 10 / 0
     html = """
     <html>
         <head>
